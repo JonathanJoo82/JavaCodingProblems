@@ -1,7 +1,6 @@
 package Chapter1;
 
-import java.io.CharConversionException;
-import java.security.Key;
+import java.lang.StringBuilder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,5 +38,10 @@ public class Chapter1Solutions {
         System.out.println(duplicatedCharactersMap);
     }
     //reverses the letter of each word and the word themselves.
+    public static void resverseLetterAndWord(String str){
+        StringBuilder sb = new StringBuilder(str);
+        sb = sb.reverse();
+        System.out.println(sb.toString());
+    }
 
 }
